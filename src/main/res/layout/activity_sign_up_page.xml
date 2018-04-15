@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.getitgoing.farmersubsidyportal.SignUpPage">
+
+    <TextView
+        android:text="NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/nameTextView" />
+
+    <TextView
+        android:text="Enter Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageTextView"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_below="@+id/nameTextView"
+        android:layout_alignStart="@+id/nameTextView" />
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/age"
+        android:layout_below="@+id/ageTextView"
+        android:layout_alignStart="@+id/ageTextView" />
+
+    <TextView
+        android:text="USERNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameTextView"
+        android:layout_below="@+id/age"
+        android:layout_alignEnd="@+id/passwordTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/username"
+        android:layout_below="@+id/usernameTextView"
+        android:layout_alignStart="@+id/age" />
+
+    <TextView
+        android:text="PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordTextView"
+        android:layout_below="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_below="@+id/passwordTextView"
+        android:layout_alignStart="@+id/passwordTextView" />
+
+    <Button
+        android:text="Upload aadhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_toEndOf="@+id/passwordTextView"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/aadhar"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
